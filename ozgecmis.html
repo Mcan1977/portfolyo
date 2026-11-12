@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Murat Canördek, Özgeçmiş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --murekkep: #0b1220; --ikincil: #4a566f; --vurgu: #2457f5; --cizgi: #dfe4ec; --zemin: #f3f6fb; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    width: 210mm; height: 296.6mm; overflow: hidden;
+    font-family: "Onest", "Segoe UI", sans-serif; font-size: 8.55pt; line-height: 1.43; color: var(--murekkep);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  h1, h2, h3, p, ul, dl, dd { margin: 0; }
+  ul { padding: 0; list-style: none; }
+  a { color: inherit; text-decoration: none; }
+
+  /* üst bant */
+  .ust {
+    display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 10mm;
+    height: 37mm; padding: 0 14mm 7.5mm; background: var(--murekkep); color: #fff;
+  }
+  h1 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 29pt; line-height: 0.95; letter-spacing: -0.035em; }
+  .rol { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 12.5pt; letter-spacing: -0.01em; color: #9db8ff; margin-top: 6pt; }
+  .iletisim { display: grid; gap: 3.2pt; font-size: 8.6pt; color: #d7deea; text-align: right; }
+  .iletisim li { display: flex; justify-content: flex-end; align-items: center; gap: 6pt; }
+  .iletisim svg { width: 9.5pt; height: 9.5pt; fill: none; stroke: #9db8ff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  /* gövde */
+  .govde { display: grid; grid-template-columns: 1fr 61mm; height: calc(296.6mm - 37mm); }
+  .ana { padding: 6.5mm 9mm 0 14mm; }
+  .yan { background: var(--zemin); padding: 6.5mm 11mm 0 8mm; border-left: 1px solid var(--cizgi); }
+
+  h2 {
+    font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 11.2pt; letter-spacing: -0.015em;
+    display: flex; align-items: center; gap: 6pt; margin: 0 0 5pt;
+  }
+  h2::before { content: ""; width: 3pt; height: 11pt; border-radius: 2pt; background: var(--vurgu); }
+  section + section { margin-top: 8pt; }
+
+  .ozet { font-size: 9pt; line-height: 1.48; color: #1d2940; }
+
+  .kayit + .kayit { margin-top: 5.6pt; }
+  .kayit-bas { display: flex; align-items: baseline; justify-content: space-between; gap: 8pt; }
+  .kayit h3 { font-family: "Onest", sans-serif; font-weight: 700; font-size: 9.8pt; letter-spacing: -0.005em; }
+  .kayit time { font-size: 8.3pt; color: var(--ikincil); white-space: nowrap; }
+  .alt { font-size: 8.7pt; color: var(--vurgu); font-weight: 600; margin-top: 0.5pt; }
+  .alt span { color: var(--ikincil); font-weight: 400; }
+  .kayit ul { margin-top: 2.5pt; }
+  .kayit li { position: relative; padding-left: 9pt; margin-bottom: 1.6pt; color: #1d2940; }
+  .kayit li::before { content: ""; position: absolute; left: 0; top: 5.4pt; width: 4pt; height: 1.3pt; background: var(--vurgu); }
+  .kayit p { margin-top: 2.5pt; color: #1d2940; }
+  .kayit .alt { margin-top: 0.5pt; color: var(--vurgu); }
+  .tek { font-size: 8.1pt; color: var(--ikincil); margin-top: 2pt; }
+  .kayit .tek { color: var(--ikincil); margin-top: 2pt; }
+
+  .rozet { display: inline-block; font-size: 7.3pt; font-weight: 600; padding: 1pt 5.5pt; border-radius: 999pt; margin-left: 5pt; vertical-align: 1pt; }
+  .rozet-yayin { background: #dcf5e7; color: #0b6b3c; }
+  .rozet-surec { background: #e3ebff; color: #1d44c4; }
+
+  /* yan sütun */
+  .yan h2 { font-size: 10.4pt; }
+  .yan h3 { font-family: "Onest", sans-serif; font-size: 8.3pt; font-weight: 600; color: var(--ikincil); margin: 0 0 3.5pt; }
+  .grup + .grup { margin-top: 7pt; }
+  .etiketler { display: flex; flex-wrap: wrap; gap: 3pt; }
+  .etiketler li { font-size: 8.1pt; font-weight: 500; padding: 1.6pt 6pt; border-radius: 4pt; background: #fff; border: 1px solid var(--cizgi); }
+  .yan p { font-size: 8.6pt; color: #1d2940; }
+  .yan .kucuk { font-size: 8.1pt; color: var(--ikincil); margin-top: 1.5pt; }
+  .yan span.kucuk { margin: 0; }
+  .okul { font-weight: 700; font-size: 9.2pt; }
+</style>
+</head>
+<body>
+  <header class="ust">
+    <div>
+      <h1>Murat Canördek</h1>
+      <p class="rol">Full-stack geliştirici, yapay zekâ ürünleri</p>
+    </div>
+    <ul class="iletisim">
+      <li>muratcanordek5@gmail.com <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></li>
+      <li>linkedin.com/in/murat-canördek-87111a228 <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8.5 10.5v6M8.5 7.5v.2M12 16.5V13a2.300 2.300 0 0 1 4.500 0v3.500"/></svg></li>
+      <li>github.com/Mcan1977 <svg viewBox="0 0 24 24"><path d="m9 8-4 4 4 4M15 8l4 4-4 4"/></svg></li>
+      <li>İstanbul <svg viewBox="0 0 24 24"><path d="M12 21s6.500-5.800 6.500-11a6.500 6.500 0 0 0-13 0c0 5.200 6.500 11 6.500 11z"/><circle cx="12" cy="10" r="2.300"/></svg></li>
+    </ul>
+  </header>
+
+  <div class="govde">
+    <main class="ana">
+      <section>
+        <p class="ozet">Son bir buçuk yılda dört işi fikir aşamasından çalışan ürüne tek başıma taşıdım. Dil modellerini ürünün iş akışına yerleştiriyor, model seçimini ölçerek yapıyor ve maliyeti çağrı düzeyinde takip ediyorum. Uçak Mühendisliği'nde mezuniyet aşamasındayım; tam zamanlı çalışabilirim.</p>
+      </section>
+
+      <section>
+        <h2>Projeler</h2>
+
+        <div class="kayit">
+          <div class="kayit-bas"><h3>CVParker <span class="rozet rozet-surec">Geliştirme sürüyor</span></h3><time>2026 – bugün</time></div>
+          <p class="alt">Yapay zekâ destekli yetenek keşfi ve eşleştirme platformu <span>· web, iOS, Android</span></p>
+          <ul>
+            <li>Şirketin cümleyle tarif ettiği adayı bulan iki aşamalı aramayı kurdum: vektör aramasıyla 100 adaylık havuz, ardından dil modeliyle yeniden sıralama ve gerekçe.</li>
+            <li>Sıralama adımında üç Claude modelini etiketli veriyle ve kör hakemle karşılaştırdım; ölçüm GitHub'da açık. Her çağrının maliyeti kayda geçiyor; bir arama yaklaşık 6 sent.</li>
+            <li>Tek geliştirici olarak web ve mobil uygulamayı, sunucuyu ve 700'den fazla otomatik testi yazdım.</li>
+          </ul>
+          <p class="tek">React Native, Expo, Node.js, PostgreSQL, pgvector, TypeScript, Claude API</p>
+        </div>
+
+        <div class="kayit">
+          <div class="kayit-bas"><h3>Docly</h3><time>2026</time></div>
+          <p class="alt">Yapay zekâ destekli belge ve PDF platformu <span>· web</span></p>
+          <ul>
+            <li>Word, Excel, PowerPoint ve PDF dosyalarının tarayıcıda düzenlendiği bir çalışma alanı geliştirdim. Yapay zekâ önerileri eski ve yeni hâliyle gösteriliyor; kullanıcı tek tek onaylıyor.</li>
+            <li>Belgeyle sohbet, özet ve çeviri; 28 PDF aracı; sekiz yapay zekâ sağlayıcısı; altı dilli arayüz.</li>
+          </ul>
+          <p class="tek">Next.js, FastAPI, Python, PostgreSQL, OnlyOffice, Docker</p>
+        </div>
+
+        <div class="kayit">
+          <div class="kayit-bas"><h3>HTA Technic mağazası <span class="rozet rozet-yayin">Yayında</span></h3><time>2026</time></div>
+          <p class="alt">ikas üzerinde e-ticaret mağazası <span>· htatechnic.com</span></p>
+          <ul>
+            <li>Hazır temanın üzerine markanın kimliğini taşıyan ayrı bir görünüm katmanı yazdım; lisansa ve modüle göre süzme ekledim, 30 ürünlük kataloğu ve ürün görsellerini hazırladım.</li>
+          </ul>
+          <p class="tek">ikas, JavaScript, CSS</p>
+        </div>
+
+        <div class="kayit">
+          <div class="kayit-bas"><h3>Online eğitim platformu ve kurumsal site</h3><time>2026</time></div>
+          <p class="alt">Müşteri işi <span>· havacılık eğitim kurumu</span></p>
+          <ul>
+            <li>7.000'den fazla açıklamalı soru, süreli deneme sınavları ve platform içi canlı ders içeren eğitim platformunu; yanında 50 sayfalık, panelden yönetilen kurumsal siteyi geliştirip teslim ettim.</li>
+          </ul>
+          <p class="tek">Next.js, PostgreSQL, Prisma, LiveKit, Docker</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Deneyim</h2>
+
+        <div class="kayit">
+          <div class="kayit-bas"><h3>Serbest yazılım geliştirici</h3><time>Mayıs 2025 – bugün</time></div>
+          <p>Kendi ürünlerim ve müşteri işleri: analizden yayına alma ve teslim sonrasına kadar tüm süreç.</p>
+        </div>
+        <div class="kayit">
+          <div class="kayit-bas"><h3>Turkish Technic</h3><time>Ağustos – Eylül 2026</time></div>
+          <p class="alt">Stajyer <span>· Hat Bakım Başkanlığı, İstanbul Havalimanı</span></p>
+          <p>Geniş Gövde A Bakım, Boeing Planlama ve Yapısal Bakım birimlerinde çalıştım; planlamadaki parça araştırma sürecini kısaltacak bir iyileştirme önerisi hazırlayıp sundum.</p>
+        </div>
+        <div class="kayit">
+          <div class="kayit-bas"><h3>İGÜ Teknoloji Transfer Ofisi</h3><time>Temmuz – Eylül 2025</time></div>
+          <p class="alt">Stajyer <span>· insansız hava aracı projesi</span></p>
+          <p>Kompozit üretim; Türkçe ve İngilizce teknik dokümantasyon.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="yan">
+      <section>
+        <h2>Yetkinlikler</h2>
+        <div class="grup">
+          <h3>Ana yığın</h3>
+          <ul class="etiketler"><li>TypeScript</li><li>React</li><li>Next.js</li><li>React Native</li><li>Node.js</li><li>PostgreSQL</li></ul>
+        </div>
+        <div class="grup">
+          <h3>Yapay zekâ</h3>
+          <ul class="etiketler"><li>Claude API</li><li>OpenAI API</li><li>Vektör arama</li><li>pgvector</li><li>İstem tasarımı</li><li>Model karşılaştırma</li><li>Maliyet takibi</li></ul>
+        </div>
+        <div class="grup">
+          <h3>Diğer</h3>
+          <ul class="etiketler"><li>Python</li><li>FastAPI</li><li>Prisma</li><li>Docker</li><li>Git</li><li>LiveKit</li><li>ikas</li></ul>
+        </div>
+        <div class="grup">
+          <h3>Geliştirme araçları</h3>
+          <ul class="etiketler"><li>Claude Code</li><li>Codex</li></ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Eğitim</h2>
+        <p class="okul">İstanbul Gelişim Üniversitesi</p>
+        <p>Uçak Mühendisliği, lisans</p>
+        <p class="kucuk">2021 – bugün · eğitim dili İngilizce</p>
+        <p class="kucuk">Mezuniyet aşamasında, tek ders kaldı.</p>
+        <p class="kucuk">Bitirme projesi: ardyanmalı turbofan motorun çevrim analizi.</p>
+      </section>
+
+      <section>
+        <h2>Diller</h2>
+        <p>Türkçe <span class="kucuk">· ana dil</span></p>
+        <p>İngilizce <span class="kucuk">· lisans eğitim dili</span></p>
+      </section>
+
+      <section>
+        <h2>Ayrıca</h2>
+        <p>TEKNOFEST 2024</p>
+        <p class="kucuk">Güvenli Uydu Haberleşmesi Yarışması, takım üyesi.</p>
+      </section>
+    </aside>
+  </div>
+</body>
+</html>
